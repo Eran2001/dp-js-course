@@ -1,7 +1,7 @@
 import "./style.css";
 
-const myLst = ["Apple", "Orange", "Banana", "Grapes"];
+const heading = "Hello, World";
 
-const myDiv = document.createElement("div");
-myDiv.innerHTML = myLst.join(", ");
-document.body.appendChild(myDiv);
+const myHeading = document.createElement("h1");
+myHeading.textContent = heading;
+document.body.appendChild(myHeading);
