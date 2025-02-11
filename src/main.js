@@ -1,12 +1,6 @@
 import "./style.css";
 
-let person = {
-  name: "Eran",
-  age: 24,
-  color: "black",
-  myFunc: function greet() {
-    console.log("My Func");
-  },
-};
+let myList = [1, 2, 3];
 
-person.myFunc();
+let [...num3] = myList;
+console.log(num3);
