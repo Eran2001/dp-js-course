@@ -7,9 +7,9 @@ class Person {
   }
 
   greet() {
-    alert(`Hello, I'm ${this.name}, and I'm ${this.age} years old.`);
+    console.log(`Hello, I'm ${this.name}, and I'm ${this.age} years old.`);
   }
 }
 
 const p1 = new Person("Era", 24);
-console.log(p1.greet());
+p1.greet();
