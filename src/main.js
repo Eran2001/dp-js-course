@@ -1,11 +1,7 @@
 import "./style.css";
 
-let number = 0;
-
 function myFunc() {
-  number = 1;
-  console.log(number);
+  let number = 1;
 }
 
-myFunc();
 console.log(number);
