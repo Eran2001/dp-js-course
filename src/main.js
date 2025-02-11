@@ -5,5 +5,7 @@ let myList = {
   age: 24,
 };
 
+delete myList.age;
+
 let { ...newList } = myList;
-console.log(newList.name);
+console.log(newList.age);
