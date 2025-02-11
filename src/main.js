@@ -9,4 +9,4 @@ let person = {
   },
 };
 
-console.log(person);
+person.myFunc();
