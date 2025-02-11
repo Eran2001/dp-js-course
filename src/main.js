@@ -1,6 +1,6 @@
 import "./style.css";
 
-const number = 20;
+let number = 0;
 
 if (!number) {
   number += 1;
