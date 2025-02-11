@@ -7,5 +7,4 @@ let myList = {
 
 delete myList.age;
 
-let { ...newList } = myList;
-console.log(newList.age);
+console.log(myList);
