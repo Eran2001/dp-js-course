@@ -1,6 +1,9 @@
 import "./style.css";
 
-let myList = [1, 2, 3];
+let myList = {
+  name: "Era",
+  age: 24,
+};
 
-let [e, r, a] = myList;
-console.log(e, r, a);
+let { ...newList } = myList;
+console.log(newList.name);
