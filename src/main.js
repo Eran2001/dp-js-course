@@ -1,15 +1,10 @@
 import "./style.css";
 
-class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+const number = 20;
 
-  greet() {
-    console.log(`Hello, I'm ${this.name}, and I'm ${this.age} years old.`);
-  }
+if (!number) {
+  number += 1;
+  console.log(number);
+} else {
+  console.log("Number is not 0");
 }
-
-const p1 = new Person("Era", 24);
-p1.greet();
