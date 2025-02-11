@@ -1,7 +1,8 @@
 import "./style.css";
 
-const heading = "Hello, World";
+const count = document.querySelector(".head");
+count.addEventListener("click", myFunction);
 
-const myHeading = document.createElement("h1");
-myHeading.textContent = heading;
-document.body.appendChild(myHeading);
+function myFunction() {
+  count.textContent = "Bye!";
+}
