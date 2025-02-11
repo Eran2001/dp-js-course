@@ -1,7 +1,6 @@
 import "./style.css";
 
-function myFunc() {
-  let number = 1;
-}
-
-console.log(number);
+let name = "Eran",
+  age = 24,
+  color = "black";
+console.log(name, age, color);
