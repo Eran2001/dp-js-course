@@ -6,3 +6,6 @@ heading.style.color = "#ff1";
 const h2 = document.createElement("h2");
 h2.textContent = "Eran Hasareli";
 document.body.appendChild(h2);
+
+h2.id = "myH2";
+console.log(h2);
