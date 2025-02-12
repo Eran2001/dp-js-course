@@ -8,3 +8,5 @@ heading.setAttribute("draggable", "true");
 heading.style.marginTop = "4rem";
 
 heading.classList.add("cssClass");
+
+heading.classList.remove("cssClass");
