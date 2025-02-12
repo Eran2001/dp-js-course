@@ -10,3 +10,6 @@ document.body.appendChild(h2);
 h2.id = "myH2";
 h2.className = "myH2";
 console.log(h2);
+
+const all = document.querySelector(".heading");
+console.log(all);
