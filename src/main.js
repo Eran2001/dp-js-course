@@ -5,6 +5,4 @@ let myList = {
   age: 24,
 };
 
-delete myList.age;
-
 console.log(myList);
