@@ -5,4 +5,4 @@ heading.style.color = "#ff1";
 
 heading.setAttribute("draggable", "true");
 
-console.log(heading);
+heading.style.marginTop = "4rem";
