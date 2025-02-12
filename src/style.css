@@ -2,12 +2,3 @@ html {
   background-color: grey;
 }
 
-#app {
-  background-color: red;
-}
-
-.heading {
-  text-decoration: underline;
-  text-underline-offset: 0.5rem;
-  text-decoration-color: inherit;
-}

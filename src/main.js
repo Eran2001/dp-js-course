@@ -5,4 +5,5 @@ let myList = {
   age: 24,
 };
 
-console.log(myList);
+const { ...newList } = myList;
+console.log(newList.name);
