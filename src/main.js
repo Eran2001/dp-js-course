@@ -1,4 +1,4 @@
 import "./style.css";
 
 const heading = document.querySelector(".heading");
-heading.style.color = "red";
+heading.style.color = "#ff1";
