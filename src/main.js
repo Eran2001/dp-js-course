@@ -6,3 +6,5 @@ heading.style.color = "#ff1";
 heading.setAttribute("draggable", "true");
 
 heading.style.marginTop = "4rem";
+
+heading.classList.add("cssClass");

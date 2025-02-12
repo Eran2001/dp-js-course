@@ -2,3 +2,9 @@ html {
   background-color: grey;
 }
 
+.cssClass {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
