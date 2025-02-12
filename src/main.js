@@ -8,4 +8,5 @@ h2.textContent = "Eran Hasareli";
 document.body.appendChild(h2);
 
 h2.id = "myH2";
+h2.className = "myH2";
 console.log(h2);
