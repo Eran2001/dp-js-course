@@ -1,4 +1,15 @@
 import "./style.css";
 
-const myFunc = (para1, para2) => ({ para1, para2 });
-console.log(myFunc(1, 2));
+let myHead = document.querySelector(".myHead");
+
+const myFunc = () => {
+  myHead.addEventListener("mouseover", () => {
+    myHead.style.color = "red";
+  });
+
+  myHead.addEventListener("mouseout", () => {
+    myHead.style.color = "";
+  });
+};
+
+window.myFunc = myFunc;
