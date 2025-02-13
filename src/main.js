@@ -24,3 +24,14 @@ const getData = async () => {
 };
 
 window.getData = getData;
+
+const greet = (name) => {
+  console.log(`Hello, ${name}`);
+};
+
+const userInput = (callback) => {
+  let name = prompt("Enter your name: ");
+  callback(name);
+};
+
+userInput(greet);
