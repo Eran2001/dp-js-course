@@ -25,8 +25,11 @@ const getData = async () => {
 
 window.getData = getData;
 
+let myHeading = document.createElement("h1");
+
 const greet = (name) => {
-  console.log(`Hello, ${name}`);
+  myHeading.textContent = name;
+  document.body.appendChild(myHeading);
 };
 
 const userInput = (callback) => {
