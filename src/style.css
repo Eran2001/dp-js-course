@@ -2,6 +2,14 @@ html {
   background-color: grey;
 }
 
+.myDarkClass {
+  background-color: #000;
+}
+
+.myLightClass {
+  background-color: grey;
+}
+
 button {
   margin-top: 2rem;
   padding: 1rem;
