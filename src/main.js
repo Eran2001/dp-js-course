@@ -1,9 +1,7 @@
 import "./style.css";
 
-const my = "eran";
-
-if (!my) {
-  console.log("Your name is empty");
-} else {
-  console.log(`You have ${my.length} characters.`);
-}
+let mainList = document.querySelector("ul");
+let listItem = document.createElement("li");
+let text = document.createTextNode("Apple");
+mainList.appendChild(listItem);
+listItem.appendChild(text);
