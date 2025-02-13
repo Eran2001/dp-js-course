@@ -3,7 +3,7 @@ import "./style.css";
 const fruits = ["Apple", "Banana", "Orange"];
 
 if (fruits.length === 0) {
-  let header = document.createElement("p");
+  let header = document.createElement("h3");
   header.textContent = "Nothing";
   document.body.appendChild(header);
 }
