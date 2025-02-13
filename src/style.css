@@ -10,6 +10,10 @@ html {
   background-color: grey;
 }
 
+.myHead {
+  color: #fff;
+}
+
 button {
   margin-top: 2rem;
   padding: 1rem;
