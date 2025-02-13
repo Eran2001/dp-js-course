@@ -2,21 +2,3 @@ html {
   background-color: grey;
 }
 
-.myDarkClass {
-  background-color: #000;
-}
-
-.myLightClass {
-  background-color: grey;
-}
-
-.myHead {
-  color: #fff;
-}
-
-button {
-  margin-top: 2rem;
-  padding: 0.8rem 1rem;
-  border-radius: 5px;
-  border: none;
-}
