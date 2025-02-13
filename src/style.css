@@ -2,14 +2,6 @@ html {
   background-color: grey;
 }
 
-#app {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
 button {
   margin-top: 2rem;
   padding: 1rem;

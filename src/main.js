@@ -5,7 +5,10 @@ const showAlert = () => {
 };
 
 const showPrompt = () => {
-  prompt("Enter your name: ");
+  let name = prompt("Enter your name: ");
+  let nameHeading = document.createElement("h1");
+  nameHeading.textContent = name;
+  document.body.appendChild(nameHeading);
 };
 
 const showConfirm = () => {
