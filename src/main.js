@@ -1,13 +1,26 @@
 import "./style.css";
 
-const response = fetch("https://jsonplaceholder.typicode.com/todos/1")
-  .then((response) => response.json())
-  .then((json) => {
-    let myList = document.createElement("li");
-    myList.textContent = JSON.stringify(json);
+let myList = document.querySelector(".myList");
 
-    document.body.appendChild(myList);
-  })
-  .catch((error) => {
-    console.error("Error Fetching data", error);
-  });
+const getData = async () => {
+  const url = "https://jsonplaceholder.typicode.com/posts";
+
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response Status: ${response.status}`);
+    }
+
+    const json = await response.json();
+
+    json.forEach((post) => {
+      const listItem = document.createElement("li");
+      listItem.textContent = post.title;
+      myList.appendChild(listItem);
+    });
+  } catch (error) {
+    console.error("Error fetching data", error);
+  }
+};
+
+window.getData = getData;
