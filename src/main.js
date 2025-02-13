@@ -8,7 +8,9 @@ if (fruits.length === 0) {
   document.body.appendChild(header);
 }
 
-for (let i = 0; i < fruits.length; i++) {
+let i = 0;
+
+while (i < fruits.length) {
   let mainList = document.querySelector("ul");
 
   let listItem = document.createElement("li");
@@ -18,4 +20,5 @@ for (let i = 0; i < fruits.length; i++) {
   mainList.appendChild(listItem);
 
   listItem.appendChild(fruitText);
+  i++;
 }
