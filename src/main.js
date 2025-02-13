@@ -1,7 +1,15 @@
 import "./style.css";
 
-let mainList = document.querySelector("ul");
-let listItem = document.createElement("li");
-let text = document.createTextNode("Apple");
-mainList.appendChild(listItem);
-listItem.appendChild(text);
+const fruits = ["Apple", "Banana", "Orange"];
+
+for (let i = 0; i < fruits.length; i++) {
+  let mainList = document.querySelector("ul");
+
+  let listItem = document.createElement("li");
+
+  let fruitText = document.createTextNode(fruits[i]);
+
+  mainList.appendChild(listItem);
+
+  listItem.appendChild(fruitText);
+}
