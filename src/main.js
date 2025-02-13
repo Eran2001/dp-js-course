@@ -2,6 +2,12 @@ import "./style.css";
 
 const fruits = ["Apple", "Banana", "Orange"];
 
+if (fruits.length === 0) {
+  let header = document.createElement("p");
+  header.textContent = "Nothing";
+  document.body.appendChild(header);
+}
+
 for (let i = 0; i < fruits.length; i++) {
   let mainList = document.querySelector("ul");
 
