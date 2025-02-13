@@ -10,3 +10,4 @@ class Person {
 
 const person1 = new Person("Era", 24);
 person1.greet();
+console.log(person1.__proto__);
