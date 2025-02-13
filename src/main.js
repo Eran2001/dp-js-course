@@ -1,15 +1,13 @@
 import "./style.css";
 
-let myHead = document.querySelector(".myHead");
+const students = [
+  { name: "Era", score: 75 },
+  { name: "Hasa", score: 80 },
+  { name: "Neo", score: 78 },
+];
 
-const myFunc = () => {
-  myHead.addEventListener("mouseover", () => {
-    myHead.style.color = "red";
-  });
+const topStudents = students.filter((student) => {
+  return student.score > 75;
+});
 
-  myHead.addEventListener("mouseout", () => {
-    myHead.style.color = "";
-  });
-};
-
-window.myFunc = myFunc;
+console.log(topStudents);
