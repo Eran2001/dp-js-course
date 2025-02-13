@@ -9,7 +9,10 @@ const greet = (name) => {
 
 const userInput = (callback) => {
   let name = prompt("Enter your name: ");
-  callback(name);
+  if (!name) {
+    alert("Please enter a valid name!");
+  }
+  callback((name = "User"));
 };
 
 userInput(greet);
