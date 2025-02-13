@@ -1,24 +1,17 @@
 import "./style.css";
 
-const fruits = ["Apple", "Banana", "Orange"];
+const showAlert = () => {
+  alert("This is a alert!");
+};
 
-if (fruits.length === 0) {
-  let header = document.createElement("h3");
-  header.textContent = "Nothing";
-  document.body.appendChild(header);
-}
+const showPrompt = () => {
+  prompt("Enter your name: ");
+};
 
-let i = 0;
+const showConfirm = () => {
+  confirm("Are you sure?");
+};
 
-while (i < fruits.length) {
-  let mainList = document.querySelector("ul");
-
-  let listItem = document.createElement("li");
-
-  let fruitText = document.createTextNode(fruits[i]);
-
-  mainList.appendChild(listItem);
-
-  listItem.appendChild(fruitText);
-  i++;
-}
+window.showAlert = showAlert;
+window.showPrompt = showPrompt;
+window.showConfirm = showConfirm;
