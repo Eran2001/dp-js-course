@@ -3,10 +3,10 @@ import "./style.css";
 const number = 0;
 
 const myPromise = new Promise((resolve, reject) => {
-  if (!number) {
+  if (number < 0) {
     reject("Please enter a valid number");
   } else {
-    resolve(number);
+    resolve(`Your number is ${number}`);
   }
 });
 
