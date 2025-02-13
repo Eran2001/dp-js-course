@@ -1,6 +1,4 @@
 import "./style.css";
 
 let btn = document.querySelector("button");
-btn.addEventListener("click", () => {
-  alert("Clicked!");
-});
+btn.addEventListener("click", () => alert("Clicked!"));
