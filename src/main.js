@@ -1,8 +1,4 @@
 import "./style.css";
+import add from "./math";
 
-const btn1 = document.querySelector("button");
-const btn2 = document.getElementById("btn");
-const btn3 = document.getElementsByClassName("btn")[0];
-const btn4 = document.querySelector(".btn");
-
-console.log(btn4);
+console.log(add(1, 3));
