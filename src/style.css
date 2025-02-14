@@ -2,39 +2,3 @@ html {
   background-color: grey;
 }
 
-.myHead {
-  text-align: center;
-  margin-top: 4rem;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 50vh;
-  gap: 2rem;
-}
-
-button {
-  cursor: pointer;
-  padding: 0.8rem;
-  border-radius: 10px;
-  border: none;
-}
-
-.color {
-  color: red;
-}
-
-.animate {
-  animation: animate 0.8s ease-in;
-}
-
-@keyframes animate {
-  from { transform: scale(0); opacity: 0; }
-  to { transform: scale(2); opacity: 1; }
-}
-
-.hidden {
-  visibility: hidden;
-}
