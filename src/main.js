@@ -1,19 +1,12 @@
 import "./style.css";
 
-const total = () => {
-  let a = prompt("a: "); // base
-  let b = prompt("b: "); // 90
-  let c = prompt("c: "); // big
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
 
-  if (!a) {
-    const total = `${c * c - b * b}`;
-    console.log("c2 = a2 + b2");
-    console.log("a2 = c2 - b2");
-    console.log(`a2 = ${c * c} - ${b * b}`);
-    console.log(`a2 = ${total}`);
-    let newTotal = Math.sqrt(total);
-    console.log(`a = ${newTotal}`);
-  }
-};
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(50, 100, 200, 100);
 
-total();
+ctx.fillStyle = "#0000FF";
+ctx.beginPath();
+ctx.arc(300, 150, 50, 0, 2 * Math.PI);
+ctx.fill();
