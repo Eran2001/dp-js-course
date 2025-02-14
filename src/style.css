@@ -2,3 +2,21 @@ html {
   background-color: grey;
 }
 
+.myHead {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  gap: 2rem;
+}
+
+button {
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+}
