@@ -1,8 +1,10 @@
 import "./style.css";
 
 const fruits = ["Apple", "Banana", "Orange"];
+
 fruits.forEach((fruit) => {
   const listItem = document.createElement("li");
+  const ul = document.querySelector("ul");
   listItem.textContent = fruit;
-  document.body.appendChild(listItem);
+  ul.appendChild(listItem);
 });
