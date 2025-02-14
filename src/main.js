@@ -1,7 +1,8 @@
 import "./style.css";
 
-const myArr = [1, 2, 3, 4];
+const value = document.querySelector("#value");
+const box = document.querySelector(".box");
 
-const [newArr, ...newArray] = myArr;
-
-console.log(newArray);
+value.addEventListener("change", () => {
+  box.style.width = `${value.value}px`;
+});
