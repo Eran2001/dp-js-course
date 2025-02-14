@@ -1,10 +1,11 @@
 import "./style.css";
 
-const fruits = ["Apple", "Banana", "Orange"];
+const btn1 = document.querySelector("button");
+const btn2 = document.getElementById("btn");
+const btn3 = document.getElementsByClassName("btn");
+const btn4 = document.getElementsByName("button");
 
-fruits.forEach((fruit) => {
-  const listItem = document.createElement("li");
-  const ul = document.querySelector("ul");
-  listItem.textContent = fruit;
-  ul.appendChild(listItem);
-});
+console.log(btn1);
+console.log(btn2);
+console.log(btn3);
+console.log(btn4);
