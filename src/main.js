@@ -1,9 +1,7 @@
 import "./style.css";
 
-try {
-  console.log(x);
-} catch (error) {
-  console.error(`Error occurred, ${error}`);
-}
+const myArr = [1, 2, 3, 4];
 
-console.log("Hello");
+const [newArr, ...newArray] = myArr;
+
+console.log(newArray);
