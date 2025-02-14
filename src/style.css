@@ -27,7 +27,7 @@ button {
 }
 
 .animate {
-  animation: animate 0.3s ease-in;
+  animation: animate 0.8s ease-in;
 }
 
 @keyframes animate {
@@ -36,5 +36,5 @@ button {
 }
 
 .hidden {
-  display: none;
+  visibility: hidden;
 }
