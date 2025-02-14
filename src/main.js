@@ -1,7 +1,8 @@
 import "./style.css";
 
-const colors = ["red", "green", "blue"];
-
-colors.forEach((color) => {
-  console.log(color);
+const fruits = ["Apple", "Banana", "Orange"];
+fruits.forEach((fruit) => {
+  const listItem = document.createElement("li");
+  listItem.textContent = fruit;
+  document.body.appendChild(listItem);
 });
