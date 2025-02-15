@@ -1,4 +1,8 @@
 import "./style.css";
 
-let win = window.open("hello", "My Window", "width=500", "height=500");
-console.log(win);
+let win = window.open(
+  "https://www.google.com",
+  "My Window",
+  "width=1000",
+  "height=500"
+);
