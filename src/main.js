@@ -13,6 +13,12 @@ function updateName() {
 }
 
 //function to remove name dynamically
+function deleteName() {
+  const storedName = localStorage.removeItem("user_name");
+  if (!storedName) {
+    h2.textContent = "";
+  }
+}
 
 login.addEventListener("click", () => {
   localStorage.setItem("user_name", name.value);
@@ -24,6 +30,5 @@ const logout = document.getElementById("logout");
 logout.addEventListener("click", () => {
   localStorage.removeItem("user_name");
   console.log("user name removed");
+  deleteName();
 });
-
-updateName();
