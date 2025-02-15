@@ -1,5 +1,4 @@
 import "./style.css";
 
-console.log(window);
-
-window.alert("Test");
+let win = window.open("hello", "My Window", "width=500", "height=500");
+console.log(win);
