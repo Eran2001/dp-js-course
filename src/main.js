@@ -28,7 +28,6 @@ login.addEventListener("click", () => {
 
 const logout = document.getElementById("logout");
 logout.addEventListener("click", () => {
-  localStorage.removeItem("user_name");
   console.log("user name removed");
   deleteName();
 });
