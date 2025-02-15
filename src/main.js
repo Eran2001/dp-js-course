@@ -1,12 +1,9 @@
 import "./style.css";
+import QRCode from "qrcode";
 
-// new QRCode(document.getElementById("qr"), "http://www.google.com");
+var canvas = document.getElementById("canvas");
 
-var qr = new QRCode("qr", {
-  text: "http://jindo.dev.naver.com/collie",
-  width: 200,
-  height: 200,
-  colorDark: "#000000",
-  colorLight: "#ffffff",
-  correctLevel: QRCode.CorrectLevel.H,
+QRCode.toCanvas(canvas, "sample text", function (error) {
+  if (error) console.error(error);
+  console.log("success!");
 });
